@@ -1,0 +1,25 @@
+<div class="p-grid p-justify-center card">
+    <div class="p-col-10 p-sm-6 p-md-4">
+      <p-card>
+        <div class="p-grid2">
+          <div class="p-col-12 text-center">
+            <h2>Cadastrar</h2>
+          </div>
+          <div class="p-col-12">
+            <label for="">Email:</label>
+            <input [(ngModel)]="requestCadastro.email" class="p-col-12" type="email" pInputText/>
+          </div>
+          <div class="p-col-12">
+            <label for="">Senha:</label>
+            <input [(ngModel)]="requestCadastro.senha" class="p-col-12" type="password" pInputText/>
+          </div>
+          <div class="p-col-12">
+            <button (click)="voltar()" pButton type="button" label="Voltar"class="p-col-12"></button>
+          </div>
+          <div class="p-col-12">
+            <button (click)="cadastrar()" pButton type="button" label="Cadastrar"class="p-col-12"></button>
+          </div>
+        </div>
+      </p-card>
+    </div>
+  </div>
